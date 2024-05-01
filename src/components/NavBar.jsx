@@ -12,7 +12,7 @@ const NavBar = () => {
     <header className="padding-x py-8 absolute z-10 w-full">
       <nav className="flex justify-between items-center max-container">
         <a href="./" className="">
-          <img src={shu} alt="Logo" width={130} height={29} />
+          <img src={headerLogo} alt="Logo" width={130} height={29} />
         </a>
 
         <ul className="max-lg:hidden flex-1 flex justify-center items-center gap-16">
