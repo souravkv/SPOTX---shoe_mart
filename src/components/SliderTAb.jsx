@@ -6,6 +6,7 @@ import React from 'react'
 
 function SliderTAb() {
   return (
+    //MYR
     <div>
         <div id='img-track'  className='   flex items-center justify-center w-screen overflow-hidden object-fill '>
         {/* <img id="iimage" className='  object-[0] w-[30vmin] h-[56vmin] object-cover px-3' draggable="false" src=""/> */}
