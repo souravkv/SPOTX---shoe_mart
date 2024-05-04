@@ -18,8 +18,10 @@ export const App = () => {
           <Route path='/login' element={<Login/>} />  
           <Route path='/' element={<Login/>} /> 
         <Route path='/try' element={<TrySite></TrySite>} />  */}
+         <Route path='/' element={<New/>} /> 
          <Route path='/home' element={<New/>} /> 
          <Route path='/checkout' element={<Checkout/>} /> 
+         <Route path='/log' element={<Login/>} />  
           
 
 

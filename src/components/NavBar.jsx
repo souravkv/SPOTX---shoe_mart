@@ -9,34 +9,13 @@ const NavBar = () => {
   const Navigate =useNavigate();
 
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
-      <nav className="flex justify-between items-center max-container">
-        <a href="./" className="">
-          <img src={headerLogo} alt="Logo" width={130} height={29} />
-        </a>
+    <div className=" fixed z-20  bg-zinc-900 w-full px-20  py-8  flex  justify-between  items-center">
+      <div className='logo'></div>
+      <div className='links'> {["Services","What I used ","Login","About Me","Collection"].map((items,index)=>{
+        return(<a key={index} onClick={()=>{Navigate('/log')}}  className='   font-["Neue_Montreal"] gap-24 px-5 text-md  hover:text-slate-400 hover:cursor-wait  capitalize font-light'>{items}</a>)
+      })}</div>
 
-        <ul className="max-lg:hidden flex-1 flex justify-center items-center gap-16">
-          {navLinks.map((navLink) => (
-            <li onClick={()=>{Navigate('/'+navLink.href)}}
-              key={navLink.href}
-              className="font-montserrat leading-normal text-lg text-slate-gray"
-            >
-              {navLink.label}
-            </li>
-          ))}
-        </ul>
-        <div className="lg:hidden">
-          <img
-            src={hamburger}
-            alt="Menu"
-            className="cursor-pointer"
-            width={25}
-            height={25}
-            onClick={toggleMenu}
-          />
-        </div>
-      </nav>
-    </header>
+    </div>
   );
 };
 

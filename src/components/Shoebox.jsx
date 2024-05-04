@@ -10,8 +10,10 @@ function Shoebox({name , imgurl,price}) {
 
     show?
 
-    <div onClick={()=>{setshow(!show)}} className=' h-screen w-screen  fixed  translate-x-[-18.3%] translate-y-[-20%] bg-black top-0 backdrop-blur-xl    bg-opacity-50 flex flex-col justify-center items-center '> 
-    <div onClick={(e)=>{e.stopPropagation() }} className=' w-1/2 bg-  h-3/4 rounded-2xl text-white  flex select-none  bg-opacity-50  backdrop-blur-xl   ' >
+
+
+    <div onClick={()=>{setshow(!show)}} className=' h-screen w-screen  fixed  translate-x-[-18.3%] translate-y-[-20%] bg-black top-0 left-0 backdrop-blur-xl    bg-opacity-50 flex flex-col justify-center items-center '> 
+    <div onClick={(e)=>{e.stopPropagation() }} className=' w-1/2   h-3/4 rounded-2xl text-white  flex select-none  bg-opacity-50  backdrop-blur-xl   ' >
               <div className=' w-1/2 shadow-sm'>
                 <img className='w-full h-full object-cover  ' draggable="false"  src={imgurl}/>
               </div>
@@ -45,7 +47,7 @@ function Shoebox({name , imgurl,price}) {
                         </div>
 
 
-                        <div  onClick={()=>{ cartItems.push({id:0,name:name ,price:price }); console.log(cartItems[1])} } className=' bg-black text-white p-2 w-[150px]  rounded absolute left-0 text-center bottom-0 hover:cursor-pointer '> ADD TO CART</div>
+                        <div  onClick={()=>{ cartItems.push({id:0,name:name ,price:price }); console.log(cartItems[1])} } className='  bg-black text-white p-2 w-[150px]  rounded absolute left-0 text-center bottom-0 hover:cursor-pointer '> ADD TO CART</div>
                     </div>
 
               </div>
