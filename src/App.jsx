@@ -1,5 +1,5 @@
 
-import {BrowserRouter , Routes ,Route} from 'react-router-dom'
+import {BrowserRouter , Routes ,Route, HashRouter} from 'react-router-dom'
 import { Home } from './Home';
 import Login from './components/Login';
 import New from './components/New';
@@ -12,7 +12,8 @@ export const App = () => {
 
     
     <div>
-      <BrowserRouter>
+     
+      <HashRouter>
         <Routes>
           {/* <Route path='/home' element={<Home/>} />  
           <Route path='/login' element={<Login/>} />  
@@ -26,7 +27,7 @@ export const App = () => {
 
 
       </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };
